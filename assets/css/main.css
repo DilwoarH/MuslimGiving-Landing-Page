@@ -15,25 +15,32 @@ body {
     font-style: normal;
     text-align: center;
     margin-top: 50px;
+       
 }
 
 body.container {
-   padding-right: 50px;
-    padding-left: 50px; 
+   padding-right: 30px;
+    padding-left: 30px; 
 }
 
-img {
-    width: 100%;
+
+.logo {
     height: auto;
-    max-width: 480px;
+    max-width: 250px; 
+  margin: 0 auto;
+    
 }
+
+
 
 .release-date {
     font-size: 1.6em;
+    font-family: sans-serif;
+    text-transform: uppercase;
 }
 
 .slogan {
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
 /* SOCIAL */
@@ -44,11 +51,13 @@ img {
     font-family: 'como-light', sans-serif;
     font-weight: normal;
     font-style: normal;
+    display: inline;
+    font-size: 16px;
 }
 
 ul {
     list-style-type: none;
-    display: inline-block;
+    display: inline;
     margin: 20px auto;
     padding: 0;
 }
@@ -57,10 +66,11 @@ ul li {
     min-width: 100px;
     text-align: left;
     margin-bottom: 20px;
+    display: inline;
 }
 
 ul li i {
-    min-width: 30px;
+    min-width: 10px;
 }
 
 ul li a {
@@ -71,4 +81,87 @@ ul li a {
 /* Trademark */
 .trademark {
     color: #006f68;
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #0A0A0A;
+  background-size: cover;
+  transition: 10s opacity;
+    
+}
+
+.contact_form {
+    font-family: 'gotham book', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    display: inline;
+    font-size: 14px;
+}
+
+
+
+#mc_embed_signup { border: none; text-align: center; width: 100%; } /* Signup form container */
+
+.mc-field-group { display: inline-block; } /* positions input field horizontally */
+
+#mce-EMAIL { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1em; border: 2px solid #ABB0B2 ; color: #343434; background-color: #fff; padding: .7em 9em .7em 1em; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block; margin: 0px;} /* Input Styles */
+
+#mce-FNAME { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1em; border: 2px solid #ABB0B2 ; color: #343434; background-color: #fff; padding: .7em 9em .7em 1em; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block; margin: 0px;} /* Input Styles */
+
+#mce-MMERGE2 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1em; border: 2px solid #ABB0B2 ; color: #343434; background-color: #fff; padding: .7em 9em .7em 1em; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block; margin: 5px;} /* Input Styles */
+
+
+.clear { display: inline-block; } /* positions button horizontally in line with input */
+
+.button { font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif; font-size: 1em; letter-spacing: .03em; color: #fff; background-color: #ef3c3b ; padding: .7em 2em; border: 2px solid #ef3c3b ; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block; margin: 20px; } /* Button Styles */
+
+:-webkit-input-placeholder { color: #ABB0B2 ; } /* WebKit browsers */ 
+:-moz-placeholder { color: #ABB0B2 ; } /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder { color: #ABB0B2 ; } /* Mozilla Firefox 19+ */
+:-ms-input-placeholder { color: #ABB0B2 ; } /* Internet Explorer 10+ */
+
+@media (max-width: 100%) { /* positions input field and button underneath each other with 100% width for tablet and mobile */
+  
+.mc-field-group { display: block; max-width: 100%; }
+#mce-EMAIL { padding: .7em 0 .7em 1em; width: 70%; margin: 0px; }
+#mce-FNAME { padding: .7em 0 .7em 1em; width: 70%; margin: 0px; }
+#mce-MMERGE2 { padding: .7em 0 .7em 1em; width: 70%; margin: 0px; }
+.clear { display: block; width: 100% }
+.button { width: 100%; margin: .5em 0 0 0; }
+  
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.share {
+    font-size: 0.7em;
+    margin-bottom: 0px;
+    font-weight: bold;
 }
